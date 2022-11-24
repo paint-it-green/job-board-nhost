@@ -1,0 +1,1 @@
+CREATE TABLE "public"."job_categories" ("id" serial NOT NULL, "category_id" integer NOT NULL, "job_id" integer NOT NULL, PRIMARY KEY ("id") , FOREIGN KEY ("category_id") REFERENCES "public"."categories"("id") ON UPDATE cascade ON DELETE cascade, FOREIGN KEY ("job_id") REFERENCES "public"."jobs"("id") ON UPDATE cascade ON DELETE cascade, UNIQUE ("id"));

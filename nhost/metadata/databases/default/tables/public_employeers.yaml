@@ -1,0 +1,3 @@
+table:
+  name: employeers
+  schema: public
