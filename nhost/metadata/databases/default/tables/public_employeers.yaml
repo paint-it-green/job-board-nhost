@@ -1,3 +1,16 @@
 table:
   name: employeers
   schema: public
+select_permissions:
+  - role: public
+    permission:
+      columns:
+        - id
+        - social_media_links_id
+        - address
+        - company_background
+        - name
+        - created_at
+        - updated_at
+        - user_id
+      filter: {}

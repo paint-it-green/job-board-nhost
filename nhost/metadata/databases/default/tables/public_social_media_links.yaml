@@ -1,3 +1,14 @@
 table:
   name: social_media_links
   schema: public
+select_permissions:
+  - role: public
+    permission:
+      columns:
+        - id
+        - facebook
+        - linkedin
+        - twitter
+        - created_at
+        - updated_at
+      filter: {}
