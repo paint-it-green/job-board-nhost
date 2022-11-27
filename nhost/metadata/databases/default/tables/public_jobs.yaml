@@ -1,3 +1,19 @@
 table:
   name: jobs
   schema: public
+select_permissions:
+  - role: public
+    permission:
+      columns:
+        - id
+        - posted_by
+        - salary_type
+        - apply_now_link
+        - apply_now_via_email
+        - description
+        - salary_amount
+        - salary_currency
+        - title
+        - created_at
+        - updated_at
+      filter: {}

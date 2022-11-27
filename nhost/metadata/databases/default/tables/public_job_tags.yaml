@@ -1,3 +1,13 @@
 table:
   name: job_tags
   schema: public
+select_permissions:
+  - role: public
+    permission:
+      columns:
+        - id
+        - job_id
+        - tag_id
+        - created_at
+        - updated_at
+      filter: {}
