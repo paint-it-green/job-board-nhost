@@ -1,6 +1,17 @@
 table:
   name: social_media_links
   schema: public
+insert_permissions:
+  - role: user
+    permission:
+      check: {}
+      columns:
+        - id
+        - facebook
+        - linkedin
+        - twitter
+        - created_at
+        - updated_at
 select_permissions:
   - role: public
     permission:
@@ -11,4 +22,30 @@ select_permissions:
         - twitter
         - created_at
         - updated_at
+      filter: {}
+  - role: user
+    permission:
+      columns:
+        - id
+        - facebook
+        - linkedin
+        - twitter
+        - created_at
+        - updated_at
+      filter: {}
+update_permissions:
+  - role: user
+    permission:
+      columns:
+        - id
+        - facebook
+        - linkedin
+        - twitter
+        - created_at
+        - updated_at
+      filter: {}
+      check: {}
+delete_permissions:
+  - role: user
+    permission:
       filter: {}
