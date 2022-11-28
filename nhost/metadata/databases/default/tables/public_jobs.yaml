@@ -2,7 +2,7 @@ table:
   name: jobs
   schema: public
 object_relationships:
-  - name: employerDetails
+  - name: employer
     using:
       manual_configuration:
         column_mapping:

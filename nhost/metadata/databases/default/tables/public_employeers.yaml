@@ -2,7 +2,7 @@ table:
   name: employeers
   schema: public
 object_relationships:
-  - name: social_media_links_detials
+  - name: social_media_links
     using:
       manual_configuration:
         column_mapping:

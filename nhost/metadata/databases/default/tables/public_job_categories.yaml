@@ -2,7 +2,7 @@ table:
   name: job_categories
   schema: public
 object_relationships:
-  - name: category_details
+  - name: category
     using:
       manual_configuration:
         column_mapping:

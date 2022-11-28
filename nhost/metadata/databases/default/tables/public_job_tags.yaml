@@ -2,7 +2,7 @@ table:
   name: job_tags
   schema: public
 object_relationships:
-  - name: tag_details
+  - name: tag
     using:
       manual_configuration:
         column_mapping:
