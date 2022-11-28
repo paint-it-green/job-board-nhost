@@ -1,6 +1,16 @@
 table:
   name: job_tags
   schema: public
+object_relationships:
+  - name: tag
+    using:
+      manual_configuration:
+        column_mapping:
+          tag_id: id
+        insertion_order: null
+        remote_table:
+          name: tags
+          schema: public
 select_permissions:
   - role: public
     permission:
