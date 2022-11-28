@@ -1,6 +1,16 @@
 table:
   name: jobs
   schema: public
+object_relationships:
+  - name: employerDetails
+    using:
+      manual_configuration:
+        column_mapping:
+          posted_by: id
+        insertion_order: null
+        remote_table:
+          name: employeers
+          schema: public
 select_permissions:
   - role: public
     permission:

@@ -1,6 +1,16 @@
 table:
   name: employeers
   schema: public
+object_relationships:
+  - name: social_media_links_detials
+    using:
+      manual_configuration:
+        column_mapping:
+          social_media_links_id: id
+        insertion_order: null
+        remote_table:
+          name: social_media_links
+          schema: public
 select_permissions:
   - role: public
     permission:
